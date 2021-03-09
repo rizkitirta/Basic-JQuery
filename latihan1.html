@@ -19,13 +19,21 @@
       dolore, rem rerum esse aliquam atque vitae, hic earum eligendi vel eos
       obcaecati tenetur quasi in eius impedit laudantium veniam ex!
     </p>
+	<button>Ubah Tulisan</button>
 
   <script src="js/jquery-3.6.0.min.js"></script>
   <script>
 	  $(document).ready(function() {
+		  //Penulisan code JQuery
 		  // $('selector').action()
-         console.log( $('#text') )
-	  });
+
+		  $('button').click(function(){
+             //Ketika button diklik lakukan sesuatu
+			 $('#text').text('word')
+		  })
+
+         
+	  })
   </script>
   </body>
 </html>
