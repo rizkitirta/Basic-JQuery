@@ -59,19 +59,20 @@
         // Penulisan code jquery
         // $('selector').action().action()
 
-        console.log(document.getElementById('text'));
-        console.log(document.getElementsByClassName('title'));
-        console.log(document.getElementsByTagName('button'));
+        console.log(document.getElementById("text"));
+        console.log(document.getElementsByClassName("title"));
+        console.log(document.getElementsByTagName("button"));
 
         // $('button').click(function () {
         //   //Ketika Tombol Diklik Lakukan Sesuatu
         //   $('#text').text('Word');
         // });
 
-		$('#text')
-		$('p')
-		$('.title')
-		$('footer p')
+        $("#text").text("World");
+        $("p").css("backgroundColor", "salmon");
+        $(".footer p").css("backgroundColor", "aqua");
+        $(".title").css("textTransform", "upperCase");
+		
       });
     </script>
   </body>
