@@ -2,38 +2,77 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JQuery-Latihan 1</title>
-	<style>
-		body{
-			font-family: sans-serif;
-			margin: 10%;
-		}
-	</style>
+    <title>jQuery - Latihan 1</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        margin: 10%;
+      }
+    </style>
   </head>
   <body>
-    <h3>Hallo <span id="text"></span> JQuery</h3>
-    <p>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate
-      dolore, rem rerum esse aliquam atque vitae, hic earum eligendi vel eos
-      obcaecati tenetur quasi in eius impedit laudantium veniam ex!
-    </p>
-	<button>Ubah Tulisan</button>
+    <div id="app">
+      <h1>Halo <span id="text">jQuery</span></h1>
+      <p>The Write Less, Do More, JavaScript Library.</p>
+      <button>Ubah Tulisan</button>
 
-  <script src="js/jquery-3.6.0.min.js"></script>
-  <script>
-	  $(document).ready(function() {
-		  //Penulisan code JQuery
-		  // $('selector').action()
+      <section class="main">
+        <nav>
+          <ul>
+            <li><a href="">Download</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">API Documentation</a></li>
+            <li><a href="">Plugin</a></li>
+          </ul>
+        </nav>
 
-		  $('button').click(function(){
-             //Ketika button diklik lakukan sesuatu
-			 $('#text').text('word')
-		  })
+        <div class="column">
+          <h3 class="title">Lightweight Footprint</h3>
+          <p>
+            Only 30kB minified and gzipped. Can also be included as an AMD
+            module
+          </p>
+        </div>
 
-         
-	  })
-  </script>
+        <div class="column">
+          <h3 class="title">CSS3 Compliant</h3>
+          <p>
+            Supports CSS3 selectors to find elements as well as in style
+            property manipulation
+          </p>
+        </div>
+
+        <div class="column">
+          <h3 class="title">Cross-Browser</h3>
+          <p>Chrome, Edge, Firefox, IE, Safari, Android, iOS, and more</p>
+        </div>
+      </section>
+
+      <div class="footer">
+        <p>&copy; kelas.jquery - 2020</p>
+      </div>
+    </div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Penulisan code jquery
+        // $('selector').action().action()
+
+        console.log(document.getElementById('text'));
+        console.log(document.getElementsByClassName('title'));
+        console.log(document.getElementsByTagName('button'));
+
+        // $('button').click(function () {
+        //   //Ketika Tombol Diklik Lakukan Sesuatu
+        //   $('#text').text('Word');
+        // });
+
+		$('#text')
+		$('p')
+		$('.title')
+		$('footer p')
+      });
+    </script>
   </body>
 </html>
