@@ -16,6 +16,13 @@
       <p>The Write Less, Do More, JavaScript Library.</p>
       <button id="pesan">Ubah Tulisan</button>
 
+      <br />
+
+      <form action="">
+        <input type="text" />
+        <button type="submit">Submit</button>
+      </form>
+
       <section class="main">
         <nav>
           <ul>
@@ -56,29 +63,10 @@
     <script src="js/jquery-3.6.0.min.js"></script>
     <script>
       $(document).ready(function () {
-        // Penulisan code jquery
-        // $('selector').action().action()
-
-        console.log(document.getElementById("text"));
-        console.log(document.getElementsByClassName("title"));
-        console.log(document.getElementsByTagName("button"));
-
-        // $('button').click(function () {
-        //   //Ketika Tombol Diklik Lakukan Sesuatu
-        //   $('#text').text('Word');
-        // });
-
-        $("#text").text("World");
-
-        $("p").css("backgroundColor", "salmon");
-        $(".footer p").css("backgroundColor", "aqua");
-        $(".title").css("textTransform", "upperCase");
-
-        $('button').mouseenter(function(){
-          $('#text').text('Balademy')
-          $('#pesan').html('<mark>Tulisan Berhasil Diubah</mark>')
-        })
-		
+        $("input").keyup(function () {
+          var nama = $(this).val();
+          $("#text").text(nama);
+        });
       });
     </script>
   </body>
